@@ -11,6 +11,8 @@
       </noscript>
    </head>
    <body class="is-preload">
+      <img src="https://cdn.shopify.com/s/files/1/2258/5767/products/Royale-Blanc_Zoom_1024x1024.jpg" class="loadergif">
+      <img src="http://gestens.unifr.ch/sc/image/loading.gif" class="loadergif">
       <!-- Header -->
       <section id="header">
          <header>
@@ -99,8 +101,6 @@
             </ul>
          </div>
       </section>
-
-    
       <!-- Generic -->
       <!--
          <article class="container box style3">
@@ -257,5 +257,11 @@
       <script src="assets/js/breakpoints.min.js"></script>
       <script src="assets/js/util.js"></script>
       <script src="assets/js/main.js"></script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+      <script type="text/javascript">
+         $(window).load(function() {
+         	$(".loadergif").delay(1600).fadeOut("slow");
+         })
+      </script>
    </body>
 </html>
