@@ -2046,9 +2046,9 @@ input, select, textarea {
 				content: '';
 				display: block;
 				position: absolute;
-				bottom: -9em;
+				bottom: -11em;
 				left: 50%;
-				height: 9em;
+				height: 11em;
 				border-left: solid 1px #fff;
 			}
 
@@ -2086,7 +2086,7 @@ input, select, textarea {
 		text-align: center;
 		background: #ffffff bottom center no-repeat;
 		padding: 0;
-		margin: 0;
+		margin-top: 2em;
 		background-size: 125% auto;
 	}
 
@@ -2100,6 +2100,7 @@ input, select, textarea {
 		}
 
 			#banner header h2 {
+
 				font-weight: 400;
 				font-size: 1.75em;
 				letter-spacing: 8px;
@@ -2611,6 +2612,7 @@ input, select, textarea {
 			#banner {
 				padding: 3em 2em 3em 2em;
 				background-size: auto 150%;
+				box-shadow: 10em;
 			}
 
 				#banner header {
