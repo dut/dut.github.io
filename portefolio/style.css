@@ -268,7 +268,7 @@ th {
   .dropup > .btn > .caret {
     border-top-color: #000 !important;
   }
-  
+
   .label {
     border: 1px solid #000;
   }
@@ -763,9 +763,15 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+
+@media (min-width: 480px){
+    .container {
+      width: 450px;
+    }
+}
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 760px;
   }
 }
 @media (min-width: 992px) {
