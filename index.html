@@ -4,6 +4,7 @@
       <meta charset="utf-8">
       <title>COMING SOON !</title>
       <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
    </head>
    <body>
       <h2>Hey le site is coming soon !</h2>
@@ -14,21 +15,14 @@
       <a href="https://linkedin.com/dutartre" target="_blank"><img src="https://image.flaticon.com/icons/png/512/8/8707.png" width="25" height="25"></a>
       <a href="https://instagram.com/dutartre" target="_blank"><img src="https://image.flaticon.com/icons/svg/69/69366.svg" width="25" height="25"> </a><br>
       <br>
-      <button type="button" onClick="onClick()" class="btn btn-default">Bouton inutile</button>
+      <button type="button" id="uselessbutton" onClick="onClick()" class="btn btn-default">Bouton inutile</button>
       <div id="spoiler" style="display:none;">
          <p>Vous avez cliqué <a id="clicks">0</a> fois sur ce bouton.</p>
       </div>
-
+      <div id="message" style="display:none;">
+        <p>xxx</p>
+      </div>
       <p style="font-size:75%;">Les logos viennent du site <a href="https://flaticon.com" target="_blank" style="color:black;">https://flaticon.com</a> - (Le design de cette page est vraiment épuré, n'est-ce pas ? :D)</p>
 
-      <script type="text/javascript">
-         var clicks = 0;
-         function onClick() {
-         clicks += 1;
-         document.getElementById("clicks").innerHTML = clicks;
-         document.getElementById("spoiler").style.display = "block";
-         };
-
-      </script>
    </body>
 </html>

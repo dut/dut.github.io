@@ -127,30 +127,29 @@
          <hr>
          <p>Les logos viennent du site <a href="https://flaticon.com" target="_blank" style="color:#333;">https://flaticon.com</a> - (Le site est vraiment épuré, n'est-ce pas ?)</p>
       </div>
+
       <script type="text/javascript">
-         // Quand on scroll down de plus de 50px, le bouton s'affiche
-         window.onscroll = function() {scrollFunction()};
+      // Quand on scroll down de plus de 50px, le bouton s'affiche
+      window.onscroll = function() {scrollFunction()};
 
-         function scrollFunction() {
-         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 50) {
-           document.getElementById("myBtn").style.display = "block";
-         } else {
-           document.getElementById("myBtn").style.display = "none";
-         }
-         }
+      function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 50) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+      }
 
-         // Quand on clique sur le bouton, ça nous ramène en haut de la page
-         function topFunction() {
-         document.body.scrollTop = 0; // For Safari
-         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-         }
+      // Quand on clique sur le bouton, ça nous ramène en haut de la page
+      function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
 
-             //Random color au bg :D
-             var bg_colour = Math.floor(Math.random() * 16777215).toString(16);
-             bg_colour = "#" + ("000000" + bg_colour).slice(-6);
-             document.bgColor = bg_colour;
-
-      </script>
+          //Random color au bg :D
+          var bg_colour = Math.floor(Math.random() * 16777215).toString(16);
+          bg_colour = "#" + ("000000" + bg_colour).slice(-6);
+          document.bgColor = bg_colour;
       </script>
    </body>
 </html>
