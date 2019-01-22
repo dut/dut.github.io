@@ -33,6 +33,7 @@ html {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
+
 body {
   margin: 0;
 }
@@ -301,7 +302,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  /*background-color: #ecf0f1;*/
 }
 input,
 button,
@@ -760,8 +761,14 @@ pre code {
 .container {
   padding-right: 15px;
   padding-left: 15px;
+  /*padding-top: 15px;*/
+  padding-bottom: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #fff;
+  border-radius: 25px;
 }
 
 @media (min-width: 480px){
