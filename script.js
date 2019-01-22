@@ -1,4 +1,4 @@
-var clicks = 0;
+var clicks = 99;
 function onClick() {
 clicks += 1;
 document.getElementById("clicks").innerHTML = clicks;
@@ -36,6 +36,6 @@ if (clicks == 5){
   document.getElementById("uselessbutton").innerHTML = "Ok au prochain clic je pars.";
 } else if (clicks == 101) {
   document.getElementById("uselessbutton").style.display = "None";
-  document.write("Bravo tu as cliqué 100 fois. J'espère que tu es content parce que le bouton fait la gueule maintenant.");
+  document.getElementById("spoiler").innerHTML = "Bravo tu as cliqué 100 fois. J'espère que tu es content parce que le bouton fait la gueule maintenant.<br><br>";
 }
 };
