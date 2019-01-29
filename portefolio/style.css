@@ -33,7 +33,13 @@ html {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
-
+.me_irl {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border-radius: 500px;
+  margin-top: 10px;
+}
 body {
   margin: 0;
 }
@@ -491,7 +497,7 @@ h6,
   font-size: 12px;
 }
 p {
-  margin: 0 0 10px;
+  margin: 0 0 0px;
 }
 .lead {
   margin-bottom: 20px;
@@ -588,9 +594,15 @@ a.bg-danger:hover {
   background-color: #e4b9b9;
 }
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
+  padding-bottom: 20px;
+  margin: 0px 0 20px;
   border-bottom: 1px solid #eee;
+}
+.titre-header {
+  height: 100px;
+  padding-top: 5px;
+  margin-left:120px;
+  vertical-align: middle;
 }
 ul,
 ol {
