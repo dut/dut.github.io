@@ -40,3 +40,21 @@ function onClick() {
       document.getElementById("spoiler").innerHTML = "Bravo tu as cliqué 100 fois. J'espère que tu es content parce que le bouton fait la gueule maintenant.<br><br>";
    }
 };
+
+// Horloge
+window.onload=function() {
+  horloge('div_horloge');
+};
+
+function horloge(el) {
+  if(typeof el=="string") { el = document.getElementById(el); }
+  function actualiser() {
+    var date = new Date();
+    var str = date.getHours();
+    str += ':'+(date.getMinutes()<10?'0':'')+date.getMinutes();
+    str += ':'+(date.getSeconds()<10?'0':'')+date.getSeconds();
+    el.innerHTML = str;
+  }
+  actualiser();
+  setInterval(actualiser,1000);
+}
