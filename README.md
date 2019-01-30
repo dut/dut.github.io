@@ -1,6 +1,5 @@
 # dutartre.github.io
-Just my little website
-Maybe a blog later
+Just my little website, maybe a blog later,
 I don't know
 
 ## Releases
