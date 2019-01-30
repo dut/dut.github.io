@@ -7,6 +7,6 @@ I don't know
 ##### 1.0
 
 - First release yeah!
-- Useless button (play with it, it's fun)
 - Main page under construction
+- Useless button (play with it, it's fun)
 - Cool portfolio
