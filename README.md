@@ -4,6 +4,12 @@ I don't know
 
 ## Releases
 
+##### 1.0.1
+
+- ReadMe added on the repo
+- Today's date added on the main page
+
+
 ##### 1.0
 
 - First release yeah!
