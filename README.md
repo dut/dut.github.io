@@ -1,4 +1,4 @@
-# dutartre.github.io
+# dut.github.io
 Just my little website, maybe a blog later,
 I don't know
 
@@ -16,4 +16,4 @@ I don't know
 - Main page under construction
 - Useless button (play with it, it's fun)
 - Cool portfolio
-- How it was? -> https://web.archive.org/web/20190130151607/https://dutartre.github.io/
+- How it was? -> https://web.archive.org/web/20190222082507/https://dut.github.io/
