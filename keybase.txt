@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/dutartre
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://dut.github.io
+  * I am dutartre (https://keybase.io/dutartre) on keybase.
+  * I have a public key ASA5pe--c6R_cs_jzrwJDYSDf_QS-Ij8Ps_G2Kin3aOmigo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012039a5efbe73a47f72cfe3cebc090d84837ff412f888fc3ecfc6d8a8a7dda3a68a0a",
+      "host": "keybase.io",
+      "kid": "012039a5efbe73a47f72cfe3cebc090d84837ff412f888fc3ecfc6d8a8a7dda3a68a0a",
+      "uid": "027c429ede1d996ebf0b26537625ea19",
+      "username": "dutartre"
+    },
+    "merkle_root": {
+      "ctime": 1579093802,
+      "hash": "2df77af1e9bcc90075611a195c07f8063656bb3bc9e57ea1657e1c493fff184d19c195e51bfb0af457c919c5a10c4a5505e5ee10eb5fe6c4ef7f9fa0ddf28b4a",
+      "hash_meta": "bcb72f85d5306de1abb3b95074ba3f4284e31245b5e97a03019ec2edf1b02b35",
+      "seqno": 14236089
+    },
+    "service": {
+      "entropy": "3LrjoRalQIuaohgO17RwRzHM",
+      "hostname": "dut.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1579093810,
+  "expire_in": 504576000,
+  "prev": "f8367860a475c79f6e98cb7d2d04d6cefc2c31324577b4030e2aac42fd757424",
+  "seqno": 13,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgOaXvvnOkf3LP4868CQ2Eg3/0EviI/D7Pxtiop92jpooKp3BheWxvYWTESpcCDcQg+DZ4YKR1x59umMt9LQTWzvwsMTJFd7QDDiqsQv11dCTEIGNMZTgfPpRWy5Ua02rTv+A78ABwQFVekEBE9hwPvDhvAgHCo3NpZ8RA8QbClNfhIYnJ1aabtqukghKux6RMRQ4RExHFbiEcdj59UdbCdU7MY8eR9YNSsZPjy/+9PROX+CKJjspm9OSNAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJ31Nno3RbQ3suM2XZ4h98tEnhF3Gfhfa1oP6Rqr+k8co3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dutartre
+
+==================================================================
