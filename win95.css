@@ -295,11 +295,11 @@ NAVBAR
 }
 .navbar-light .navbar-toggler.collapsed .navbar-toggler-icon {
     width: 32px;
-    background: url(icons/directory_closed_cool-5.png);
+    background: url(img/directory_closed_cool-5.png);
 }
 .navbar-light .navbar-toggler .navbar-toggler-icon {
     width: 32px;
-    background: url(icons/directory_open_cool-5.png);
+    background: url(img/directory_open_cool-5.png);
 }
 .navbar-toggler{
     width: auto;
