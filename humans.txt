@@ -1,0 +1,14 @@
+/* TEAM */
+	The one and only: Nicola Dutartre
+	Contact: nicoladutartre [at] gmail.com
+	From: Lyon, Rhône, France
+
+/* THANKS */
+
+	Template: Alex B
+  Site: https://alex-b.me/
+  
+/* SITE */
+	Last update:2020/10/16
+	Doctype:HTML5
+	IDE: Atom, Visual Studio Code
