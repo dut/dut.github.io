@@ -1,20 +1,63 @@
+.carte {
+  width: 50%;
+  margin: 0 auto;
+}
+path {
+  stroke: #000000;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-opacity: .25;
+  fill: #FFFFFF;
+}
+g path:hover {
+  fill: #d7fffa;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+}
+
+    .ok {
+        fill: #00FF00;
+    }
+
+    .ok:hover {
+        fill: #00d600;
+}
+
 body {
   font-family: segoe ui;
-  margin: 0 25% 0 25%;
+}
+
+.titre {
+
+margin: 0 25% 0 25%;
 }
 
 h1 {
-  font-size: 2.5rem;
+font-size: 2.5rem;
 }
 
 p {
-  font-size: 1.25rem;
+font-size: 1.25rem;
 }
 
 a {
-  color: black;
+color: black;
 }
 
 a:visited {
-  color: black;
+color: black;
 }
+
+@media screen and (max-width: 1080px) {
+.carte {
+width: 100%;
+}
+
+.titre {
+margin: 0;
+}
+} 
