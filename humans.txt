@@ -9,6 +9,6 @@
   Site: https://alex-b.me/
   
 /* SITE */
-	Last update:2021/10/26
+	Last update:2021/11/18
 	Doctype:HTML5
 	IDE: Atom, Visual Studio Code
