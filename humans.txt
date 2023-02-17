@@ -1,14 +1,21 @@
-/* TEAM */
-	The one and only: Nicola Dutartre
-	Contact: nicoladutartre [at] gmail.com
-	From: Lyon, Rhône, France
+DONATION GOAL POUSSINS SOLIDAIRES
 
-/* THANKS */
+1€    : Je démute mon micro
+5€    : tierlist des régions
+9.50€ : Je garde l'argent des donations pour m'acheter un menu tacos à la Marinade (Villeurbanne)
+9.51€ : Je ne prend plus l'argent
+10€   : J'appelle ma grand-mère et je lui pose 10 questions sur moi (1€ dans une cagnotte par mauvaise réponse)
+20€   : Ma copine me maquille
+25€   : Je garde le maquillage jusqu'à la fin de l'event
+30€   : Live cuisine avec guest OMG ?*
+50€   : GeoGuessr France et je donne 1 centime par 10 points perdus
+75€   : Speedrun Portal 2 en co-op avec guest*
+100€  : Je ne coupe pas le stream avant la fin du l'event
+150€  : Live dans une préfecture (si j'ai les autorisations)*
+200€  : Tatouage (vous choisissez le motif)*
+500€  : Je coupe mes cheveux*
 
-	Template: Alex B
-  Site: https://alex-b.me/
-  
-/* SITE */
-	Last update:2021/11/18
-	Doctype:HTML5
-	IDE: Atom, Visual Studio Code
+à chaque dons de 5€  : Une baffe de ma copine
+à chaque dons de 20€ : 20 pompes
+
+* = Goal à réaliser hors event
