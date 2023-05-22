@@ -1,0 +1,125 @@
+/* Définition des couleurs principales */
+:root {
+    --background-color: #f5f5f5;
+    --main-color: #333;
+    --secondary-color: #666;
+    --accent-color: #44c7f4;
+    --button-hover-color: #3fb8e8;
+  }
+  
+  /* Style pour le corps de la page */
+  body {
+    background-color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-color);
+  }
+  
+  /* Style pour l'élément principal de la page */
+  main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  /* Style pour le titre principal */
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+  }
+  
+  /* Style pour la description */
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+  }
+  
+  /* Style pour les titres de section */
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+  }
+  
+  /* Style pour les projets */
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  li {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--main-color);
+  }
+  
+  /* Style pour les images des projets */
+  li img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  li:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Style pour les boutons des projets */
+  .project-btn {
+    display: block;
+    margin: 20px auto 0;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .project-btn:hover {
+    background-color: var(--button-hover-color);
+  }
+  
+  /* Style pour les liens de la section "Me contacter" */
+  ul li a {
+    display: inline-block;
+    margin-right: 10px;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  ul li a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Style pour les icônes */
+  i {
+    margin-right: 10px;
+    color: var(--accent-color);
+  }
+  
