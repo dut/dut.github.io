@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon, quelle heure est-il ?</title>
+    <style>
+        body {
+            background-image: url('img/simon_triste.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            position: relative;
+            height: 100vh;
+        }
+        
+        .texteHaut,
+        .texteBas {
+            color: white;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 500%;
+            margin: 0;
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .texteBas {
+            bottom: 0;
+        }
+        
+        #heure-actuelle {
+            font-size: 1em;
+        }
+    </style>
+    <script>
+        function afficherHeureActuelle() {
+            var elementHeureActuelle = document.getElementById('heure-actuelle');
+            var elementFond = document.body;
+            var maintenant = new Date();
+            // maintenant.setHours(6, 0, 0, 0); // Forcer l'heure à être 6:00
+            var heures = maintenant.getHours();
+            var minutes = maintenant.getMinutes();
+            var secondes = maintenant.getSeconds();
+
+            var heureFormattee = ajouterZero(heures) + ':' + ajouterZero(minutes);
+
+            elementHeureActuelle.textContent = heureFormattee;
+
+            if ((heures === 6 || heures === 18) && minutes === 0) {
+                elementFond.style.backgroundImage = "url('img/simon_content.png')";
+            } else {
+                elementFond.style.backgroundImage = "url('img/simon_triste.png')";
+            }
+
+            setTimeout(afficherHeureActuelle, 1000);
+        }
+
+        function ajouterZero(nombre) {
+            return (nombre < 10) ? '0' + nombre : nombre;
+        }
+
+        window.onload = afficherHeureActuelle;
+    </script>
+</head>
+
+<body>
+    <p class="texteHaut">
+        Simon il est
+    </p>
+    <p class="texteBas">
+        Simon il est <span id="heure-actuelle"></span>
+    </p>
+</body>
+
+</html>
