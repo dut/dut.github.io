@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De gauche ou de droite ?</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 50px auto;
+            padding: 20px;
+            transition: background-color 0.5s;
+            max-width: 600px;
+        }
+        
+        #barreRecherche {
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        #resultat {
+            margin-top: 20px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>De gauche ou de droite ?</h1>
+    <input type="text" id="barreRecherche" placeholder="Entrez votre requête" onkeypress="gererAppuiTouche(event)">
+    <div id="resultat"></div>
+
+    <script>
+        function rechercher() {
+            var saisieUtilisateur = document.getElementById("barreRecherche").value;
+            var resultatDiv = document.getElementById("resultat");
+            var corpsPage = document.body;
+
+            if (saisieUtilisateur.trim() !== "") {
+                // Simulation de résultats aléatoires pour la démo
+                var coteAleatoire = Math.random() < 0.5 ? "gauche" : "droite";
+                var messageResultat = saisieUtilisateur.charAt(0).toUpperCase() + saisieUtilisateur.slice(1) + ", c'est de " + coteAleatoire + ".";
+
+                // Affichage des résultats
+                resultatDiv.innerHTML = "<p>" + messageResultat + "</p>";
+
+                // Modification de la couleur de fond en fonction du résultat
+                corpsPage.style.backgroundColor = coteAleatoire === "gauche" ? "red" : "blue";
+            } else {
+                // Gestion du cas où l'utilisateur n'a rien saisi
+                resultatDiv.innerHTML = "<p>Veuillez saisir une requête.</p>";
+            }
+        }
+
+        function gererAppuiTouche(event) {
+            if (event.key === "Enter") {
+                rechercher();
+            }
+        }
+    </script>
+</body>
+
+</html>
