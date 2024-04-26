@@ -14,7 +14,7 @@
             position: relative;
             height: 100vh;
         }
-        
+
         .texteHaut,
         .texteBas {
             color: white;
@@ -27,13 +27,33 @@
             left: 50%;
             transform: translateX(-50%);
         }
-        
+
         .texteBas {
             bottom: 0;
         }
-        
+
         #heure-actuelle {
             font-size: 1em;
+        }
+
+        #texteAcheter {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 20px;
+            cursor: pointer;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50%, 100% {
+                opacity: 1;
+            }
+            25%, 75% {
+                opacity: 0;
+            }
         }
     </style>
     <script>
@@ -63,7 +83,25 @@
             return (nombre < 10) ? '0' + nombre : nombre;
         }
 
-        window.onload = afficherHeureActuelle;
+        function redirigerVersPage() {
+            // Modifier l'URL de la page de destination
+            window.location.href = '/acheter/index.html';
+        }
+
+        window.onload = function () {
+            afficherHeureActuelle();
+
+            // Ajouter le texte "Achetez nos montres => ici"
+            var texteAcheter = document.createElement('div');
+            texteAcheter.id = 'texteAcheter';
+            texteAcheter.textContent = 'Achetez nos montres => ';
+            var lienIci = document.createElement('span');
+            lienIci.style.color = 'blue';
+            lienIci.textContent = 'ici';
+            lienIci.addEventListener('click', redirigerVersPage);
+            texteAcheter.appendChild(lienIci);
+            document.body.appendChild(texteAcheter);
+        };
     </script>
 </head>
 

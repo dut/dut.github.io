@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotion Montre de Luxe</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: url('../img/Simon_il_est_6_heures.jpg') repeat;
+            animation: backgroundMove 30s linear infinite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+        }
+
+        @keyframes backgroundMove {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: -100% -100%;
+            }
+        }
+
+        /* Watch Image */
+        .watch-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: rotateWatch 5s linear infinite;
+        }
+
+        @keyframes rotateWatch {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Promo Text */
+        .promo-text {
+            font-size: 36px;
+            color: white;
+            text-align: center;
+            animation: blinkText 1s infinite;
+        }
+
+        @keyframes blinkText {
+            0%, 50%, 100% {
+                color: yellow;
+            }
+
+            25%, 75% {
+                color: red;
+            }
+        }
+
+        /* Content from the first code */
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="watch-container">
+        <img src="../img/montre2luxe.png" alt="Montre de Luxe" style="width: 500px;">
+    </div>
+
+    <div class="promo-text">
+        PROMO -69% : SEULEMENT 3 999.99€
+    </div>
+
+    <div class="content">
+        <p>Achetez nos montres.</p>
+        <!-- Add more content as needed -->
+    </div>
+</body>
+
+</html>
