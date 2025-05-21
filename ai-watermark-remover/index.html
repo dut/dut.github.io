@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Analyseur de Watermarks Invisibles</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 900px; margin: auto; }
+    textarea { width: 100%; height: 150px; font-family: monospace; }
+    .section { margin-bottom: 20px; }
+    .hidden { display: none; }
+    button { padding: 10px 20px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+  <h1>Analyseur de Watermarks Invisibles</h1>
+
+  <div class="section">
+    <label for="inputText"><strong>Collez ici votre texte :</strong></label>
+    <textarea id="inputText" placeholder="Collez votre texte ici..."></textarea>
+  </div>
+
+  <div class="section">
+    <button onclick="analyzeText()">Analyser et Nettoyer</button>
+  </div>
+
+  <div class="section hidden" id="reportSection">
+    <h2>Résumé de l’analyse</h2>
+    <pre id="summary"></pre>
+
+    <h2>Texte Nettoyé</h2>
+    <textarea id="cleanedText" readonly></textarea>
+
+    <button onclick="downloadCleaned()">Télécharger le texte nettoyé</button>
+  </div>
+
+  <script>
+    const INVISIBLE_CHARS = /[\u200B\u200C\u200D\u2060\u00AD\u200E\u200F\u202A-\u202E\u2061-\u2064\uFEFF]/g;
+    const ASCII_CONTROL_CHARS = /[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g;
+    const WHITESPACE_SEQUENCE = /\s+/g;
+    const EXCESSIVE_WHITESPACE = /\s{2,}/g;
+
+    function analyzeText() {
+      const originalText = document.getElementById("inputText").value;
+      if (!originalText.trim()) {
+        alert("Veuillez coller un texte dans la zone prévue.");
+        return;
+      }
+
+      const invisibleMatches = [...originalText.matchAll(INVISIBLE_CHARS)];
+      const controlMatches = [...originalText.matchAll(ASCII_CONTROL_CHARS)];
+      const excessiveMatches = [...originalText.matchAll(EXCESSIVE_WHITESPACE)];
+
+      let summary = `
+Caractères invisibles : ${invisibleMatches.length}
+Caractères de contrôle ASCII : ${controlMatches.length}
+Séquences d'espaces excessifs : ${excessiveMatches.length}
+Taille originale : ${originalText.length} caractères
+      `;
+
+      // Nettoyage
+      let cleaned = originalText
+        .replace(INVISIBLE_CHARS, '')
+        .replace(ASCII_CONTROL_CHARS, '')
+        .replace(WHITESPACE_SEQUENCE, ' ')
+        .trim();
+
+      document.getElementById("summary").textContent = summary.trim();
+      document.getElementById("cleanedText").value = cleaned;
+      document.getElementById("reportSection").classList.remove("hidden");
+    }
+
+    function downloadCleaned() {
+      const text = document.getElementById("cleanedText").value;
+      const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "cleaned_text.txt";
+      link.click();
+    }
+  </script>
+
+</body>
+</html>
